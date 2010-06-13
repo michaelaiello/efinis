@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  accounttype_ud: 1
+  username: MyString
+  password: MyString
+  associatedemail: MyString
+  disposition: MyString
+  user_id: 1
+
+two:
+  accounttype_ud: 1
+  username: MyString
+  password: MyString
+  associatedemail: MyString
+  disposition: MyString
+  user_id: 1

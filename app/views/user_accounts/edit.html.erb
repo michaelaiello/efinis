@@ -1,0 +1,36 @@
+<h1>Editing user_accounts</h1>
+
+<% form_for(@user_accounts) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :accounttype_ud %><br />
+    <%= f.text_field :accounttype_ud %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :associatedemail %><br />
+    <%= f.text_field :associatedemail %>
+  </p>
+  <p>
+    <%= f.label :disposition %><br />
+    <%= f.text_field :disposition %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user_accounts %> |
+<%= link_to 'Back', user_accounts_path %>

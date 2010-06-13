@@ -1,0 +1,33 @@
+<p>
+  <b>Accounttype ud:</b>
+  <%=h @user_accounts.accounttype_ud %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%=h @user_accounts.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @user_accounts.password %>
+</p>
+
+<p>
+  <b>Associatedemail:</b>
+  <%=h @user_accounts.associatedemail %>
+</p>
+
+<p>
+  <b>Disposition:</b>
+  <%=h @user_accounts.disposition %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @user_accounts.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_accounts_path(@user_accounts) %> |
+<%= link_to 'Back', user_accounts_path %>

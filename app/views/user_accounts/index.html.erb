@@ -1,0 +1,30 @@
+<h1>Listing user_accounts</h1>
+
+<table>
+  <tr>
+    <th>Accounttype ud</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th>Associatedemail</th>
+    <th>Disposition</th>
+    <th>User</th>
+  </tr>
+
+<% for user_accounts in @user_accounts %>
+  <tr>
+    <td><%=h user_accounts.accounttype_ud %></td>
+    <td><%=h user_accounts.username %></td>
+    <td><%=h user_accounts.password %></td>
+    <td><%=h user_accounts.associatedemail %></td>
+    <td><%=h user_accounts.disposition %></td>
+    <td><%=h user_accounts.user_id %></td>
+    <td><%= link_to 'Show', user_accounts %></td>
+    <td><%= link_to 'Edit', edit_user_accounts_path(user_accounts) %></td>
+    <td><%= link_to 'Destroy', user_accounts, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user_accounts', new_user_accounts_path %>
